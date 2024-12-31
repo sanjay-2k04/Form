@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Form Filler</title>
+</head>
+<body>
+    <table style="height: 100vh; width: 100vw;">
+        <tr>
+            <td align="center" valign="middle">
+                <form action="http://localhost:3000/submit_form" method="post">
+                    <h1>Student Information Form</h1>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required><br><br>
+
+                    <label for="rollno">Roll No:</label>
+                    <input type="text" id="rollno" name="rollno" required><br><br>
+
+                    <label for="dept">Department:</label>
+                    <input type="text" id="dept" name="dept" required><br><br>
+
+                    <label for="dob">Date of Birth:</label>
+                    <input type="date" id="dob" name="dob" required><br><br>
+
+                    <label for="bloodgroup">Blood Group:</label>
+                    <input type="text" id="bloodgroup" name="bloodgroup" required><br><br>
+
+                    <label for="address">Address:</label>
+                    <textarea id="address" name="address" rows="4" cols="50" required></textarea><br><br>
+
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required><br><br>
+
+                    <input type="submit" value="Submit">
+                </form>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
